@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>title</title>
+</head>
+<body>
+	
+<!-- header uper bar + navbar menu -->
+	<header>
+		<div class="row">
+			<div class="col-md uperbar">
+				<form class="form-inline">
+					<i class="fa fa-search"></i>
+					<input type="search" id="searchText" class="form-control  live-search-box" placeholder="Entrer une poste..." autocomplete="off">
+				</form>
+				<ul class="list-unstyled live-search-list">
+				</ul>
+			</div>
+			<div class="col-md text-md-right text-left compte">
+				<a href="" data-toggle="tooltip" title="facebook!">
+					<i class="fa fa-facebook fa-fw"></i>
+				</a>
+				<a href="" data-toggle="tooltip" title="instagram!">
+					<i class="fa fa-instagram fa-fw"></i>
+				</a> 
+				<a href="" data-toggle="tooltip" title="twitter!">
+					<i class="fa fa-twitter fa-fw"></i>
+				</a>
+				<a href="" data-toggle="tooltip" title="youtube!">
+					<i class="fa fa-youtube fa-fw"></i>
+				</a>
+				<a href="" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-user-circle fa-lg"></i> 
+					</a>
+					<ul class="dropdown-menu">
+						<li class="menu-item"><a href="inscription.html" class="menu-link">New account</a></li>
+						<li class="menu-item"><a href="" data-toggle="modal" data-target="#myModal" class="menu-link">Sign in</a></li>
+					</ul>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<nav class="navbar navbar-light navbar-expand-lg">
+				<a href="index.html" class="navbar-brand">Job<span>B</span></a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navToggle">
+					Menu <i class="fa fa-caret-down"></i>
+				</button>
+				<div id="navToggle" class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link">Home \</a></li>
+						<li class="nav-item"><a href="Contact.html" class="nav-link">Contact \</a></li>
+						<li class="nav-item"><a href="About.html" class="nav-link">About \</a></li>
+						<li class="nav-item dropdown"> 
+							<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-globe"></i></a> 
+							<ul class="dropdown-menu">
+								<li class="menu-item"><a href="" class="menu-link">English</a></li>
+								<li class="menu-item"><a href="" class="menu-link">Frensh</a></li>
+								<li class="menu-item"><a href="" class="menu-link">Arabic</a></li>
+							</ul>
+						</li> 
+						<li class="nav-item dropdown">
+							<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i></a>
+							<ul class="dropdown-menu">
+								<li class="menu-item"><a href="" class="menu-link">Profile</a></li>
+								<li class="menu-item"><a href="" class="menu-link">Settings</a></li>
+								<li class="menu-item"><a href="" class="menu-link">Sign-out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="navigate">
+		<ul class="list-unstyled">
+			<li><a href="index.html">Home \</a></li>
+			<li><a href="">New Account</a></li>
+		</ul>
+		<div class="rotate1"></div>
+		<div class="rotate2"></div>
+	</div>
+
+	<div class="container inscription">
+		<h4 class="text-left">New account</h4>
+		<form>
+			<div class="form-group">
+				<font size="3" color="#a79e9e">Type your name</font>
+				<input type="text" name="" id="nom" class="form-control" placeholder="name...">
+				<div id="NameVide">box is empty</div>
+				<div id="NameValide">Just letters : jhon,micheal,hamid...</div>
+				<span>*</span>
+			</div>
+			<div class="form-group">
+				<font size="3" color="#a79e9e">Exemple@domain.com</font>
+				<input type="text" name="" id="login" class="form-control" placeholder="email...">
+				<span>*</span>
+				<div id="LgVide">box is empty</div>
+				<div id="LgValide">incorrect email</div>
+			</div>
+			<div class="form-group">
+				<font size="3" color="#a79e9e">Your Education or a your Job</font>
+				<input type="text" name="" id="diplome" class="form-control">
+				<span>*</span>
+				<div id="DpVide">box is empty</div>
+			</div>
+			<div class="form-group">
+				<font size="3" color="#a79e9e">New password</font>
+				<input type="password" name="" id="pwd" class="form-control" placeholder="password...">
+				<span>*</span>
+				<div id="pwdVide">box is empty</div>
+			</div>
+			<div class="form-group">
+				<font size="3" color="#a79e9e">Confirme a password</font>
+				<input type="password" name="" id="Conpwd" class="form-control" placeholder="Confirmer password...">
+				<span>*</span>
+				<div id="ConpwdVide">box is empty</div>
+				<div id="ConValide">Type a same password</div>
+			</div>
+			<div class="form-group">
+				<br>
+				<button class="" type="button" onclick="CompteValidate()"> create account</button>
+			</div>
+		</form>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<section class="col-md-6">
+					<h3>About us</h3>
+					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+				</section>
+				<section class="col-md">
+					<h3>Technologies Et Framwork</h3>
+					<ul class="list-unstyled">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Json</li>
+						<li>Bootstrap</li>
+					</ul>
+				</section>
+				<section class="col-md">
+					<h3>Social Media</h3>
+					<ul class="list-unstyled">
+						<li><a href="#"><i class="fa fa-twitter">&nbsp;</i>Twitter</a></li>
+						<li><a href="#"><i class="fa fa-facebook">&nbsp;</i>Facebook</a></li>
+						<li><a href="#"><i class="fa fa-instagram">&nbsp;</i>Instagram</a></li>
+						<li><a href="#"><i class="fa fa-youtube">&nbsp;</i>Youtube</a></li>
+					</ul>
+				</section>
+			</div>
+			<hr>
+			<div class="copyright">
+				<p> &copy; copyright reserved | BENSARGHIN 2018 - 2019 </p>
+			</div>
+		</div>
+	</footer>
+
+  <!-- Notification message -->
+  <div id="snackbar">Your account have created..</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        	<form name="sign">
+        		<div class="form-group">
+			    	<input type="text" id="slogin" class="form-control" placeholder="Email...">
+			    	<div id="sLgVide">Box is empty</div>
+			    	<div id="sLgValide">Exemple@domain.com</div>
+			    </div>
+			    <div class="form-group">
+			    	<input type="password" id="spwd" class="form-control" placeholder="password...">
+			    	<div id="spwdVide">Box is empty</div>
+			    </div>
+			    <div class="form-group">
+			    	<button type="button" name="send" class="modal-btn" onclick="validate()">Sign-in</button>
+			    </div>
+        	</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<script src="js/jquery.min.js"></script><!-- The actual snackbar -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/validation.js"></script>
+</body>
+</html>
